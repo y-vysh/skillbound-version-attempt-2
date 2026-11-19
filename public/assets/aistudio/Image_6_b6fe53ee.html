@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container": "#e5eeff", "surface-container-highest": "#d3e4fe", "background": "#f8f9ff", "secondary-fixed-dim": "#bdc2ff", "primary-fixed-dim": "#c3c0ff", "surface": "#f8f9ff", "primary": "#2a14b4", "on-surface-variant": "#464554", "on-primary-fixed": "#100069", "outline-variant": "#c7c4d7", "surface-container-lowest": "#ffffff", "on-tertiary-fixed": "#2a1700", "tertiary-fixed-dim": "#ffb95f", "secondary-fixed": "#e0e0ff", "outline": "#777586", "surface-container-high": "#dce9ff", "on-primary-fixed-variant": "#372abf", "on-tertiary-fixed-variant": "#653e00", "on-primary": "#ffffff", "primary-fixed": "#e3dfff", "inverse-primary": "#c3c0ff", "on-error-container": "#93000a", "tertiary-fixed": "#ffddb8", "on-secondary-fixed-variant": "#2f3aa3", "surface-bright": "#f8f9ff", "inverse-surface": "#213145", "surface-container-low": "#eff4ff", "on-error": "#ffffff", "error": "#ba1a1a", "on-tertiary-container": "#ffb759", "surface-variant": "#d3e4fe", "on-secondary-fixed": "#000767", "on-surface": "#0b1c30", "tertiary-container": "#744800", "on-secondary": "#ffffff", "on-secondary-container": "#17228f", "inverse-on-surface": "#eaf1ff", "error-container": "#ffdad6", "on-tertiary": "#ffffff", "surface-dim": "#cbdbf5", "primary-container": "#4338ca", "secondary-container": "#8792fe", "tertiary": "#553300", "secondary": "#4953bc", "on-background": "#0b1c30", "surface-tint": "#5148d7", "on-primary-container": "#c1beff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin": "2rem", "margin-sm": "1rem", "space-lg": "1.5rem", "gutter-sm": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "gutter": "1.5rem", "space-xl": "2rem", "space-xs": "0.25rem" }, fontFamily: { "label-md": ["Inter"], "display": ["Plus Jakarta Sans"], "display-mobile": ["Plus Jakarta Sans"], "caption": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Inter"], "label-sm": ["Inter"], "body-lg": ["Inter"], "label-lg": ["Inter"], "body-sm": ["Inter"] }, fontSize: { "label-md": ["14px", { lineHeight: "18px", fontWeight: "500" }], "display": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }], "display-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.015em", fontWeight: "700" }], "caption": ["13px", { lineHeight: "18px", fontWeight: "400" }], "headline-sm": ["18px", { lineHeight: "26px", fontWeight: "600" }], "headline-md": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-lg": ["26px", { lineHeight: "34px", letterSpacing: "-0.015em", fontWeight: "600" }], "body-md": ["15px", { lineHeight: "22px", fontWeight: "400" }], "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "label-lg": ["15px", { lineHeight: "20px", fontWeight: "600" }], "body-sm": ["14px", { lineHeight: "20px", fontWeight: "400" }] } } } };</script></head><body class="bg-surface text-on-surface flex flex-col min-h-full font-body-md text-body-md"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter-sm flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><div class="flex items-center gap-space-xs"><img alt="Modern minimalist academic brand logo for SkillBound, featuring two interlocking reciprocal arrows forming an 'S' shape or ribbon, clean vector, deep indigo and warm amber accent, student skill exchange, professional and friendly. Design context: - Primary color: #4338ca
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+. The logo should be visually consistent with these brand tokens." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Ufeogdj9xE8wxlDD4y5Tcz-cdXtYLP5uNQKR8ooBdSd4q00k1_YswtaHZqa-JiJdsPK6H9vakTISnXJndyQVSlPem5M72LUHLiZbZ-fs8yaVD9rOnA6m4F6r51X__q_FO6siQp41TZ4QM4gWROQYiN4Z8t49QJXSnulquI2iSMcbmUKvZhn2HlmjBt9GhARhWMsV1wG2S-OW0nQ_1JcGVpqCRyjy3MZeNs1JOk5xJiasi5lmbmSIbU9DA"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight ml-1">SkillBound</span></div></div><div class="flex items-center gap-space-sm"><span class="font-label-md text-label-md text-on-surface-variant hidden sm:inline">Create Account</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full px-gutter-sm pb-space-xl">
+<!-- Interactive Demonstration Toggle Banner (Delight feature for UX review) -->
+<div class="w-full mt-space-sm mb-space-md bg-surface-container-high rounded-xl p-space-sm flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0">tune</span>
+<span class="font-label-sm text-label-sm text-on-surface truncate">Demo Live Validations &amp; Next Step</span>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="px-space-xs py-1 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm hover:bg-surface-container transition-colors shadow-sm" id="btn-toggle-errors" type="button">
+        Simulate Errors
+      </button>
+<button class="px-space-xs py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm hover:opacity-90 transition-opacity shadow-sm" id="btn-toggle-success" type="button">
+        Next Step View
+      </button>
+</div>
+</div>
+<!-- Main Flow Container -->
+<div class="w-full flex flex-col gap-space-md">
+<!-- Brand Header Presentation -->
+<div class="flex flex-col items-center text-center pt-space-xs pb-space-sm">
+<div class="w-16 h-16 rounded-2xl bg-surface-container-lowest p-2 shadow-sm flex items-center justify-center mb-space-sm relative">
+<img alt="SkillBound Academic Reciprocal Ribbon Logo" class="w-12 h-12 object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Ufeogdj9xE8wxlDD4y5Tcz-cdXtYLP5uNQKR8ooBdSd4q00k1_YswtaHZqa-JiJdsPK6H9vakTISnXJndyQVSlPem5M72LUHLiZbZ-fs8yaVD9rOnA6m4F6r51X__q_FO6siQp41TZ4QM4gWROQYiN4Z8t49QJXSnulquI2iSMcbmUKvZhn2HlmjBt9GhARhWMsV1wG2S-OW0nQ_1JcGVpqCRyjy3MZeNs1JOk5xJiasi5lmbmSIbU9DA"/>
+<span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary shadow-sm">
+<span class="material-symbols-outlined text-[10px]">sync_alt</span>
+</span>
+</div>
+<h1 class="font-display-mobile text-display-mobile text-on-surface tracking-tight mb-space-xs">
+        Join SkillBound
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+        Exchange skills 1-for-1 with verified students at your campus.
+      </p>
+</div>
+<!-- Onboarding Step Indicator Preview (Progress Tracker) -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-semibold text-primary">Step 1: Campus Identity</span>
+<span>Next: Skill Trade Profile</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden flex">
+<div class="h-full bg-primary rounded-full transition-all duration-500 w-1/3" id="progress-bar-fill"></div>
+</div>
+</div>
+<!-- Live Success / Step Progression Card (Visible on Step 1 completion) -->
+<div class="hidden w-full bg-surface-container-lowest rounded-xl p-space-md shadow-md animate-fade-in flex flex-col gap-space-sm" id="onboarding-progression-card">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wide block">Step 1 of 3 Verified</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Account Established!</h2>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container text-primary">
+          Verified Student
+        </span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-space-xs">
+<p class="font-body-sm text-body-sm text-on-surface">
+<strong class="font-medium">Up Next: Complete Your Skill Profile</strong>
+</p>
+<p class="font-caption text-caption text-on-surface-variant">
+          Pair what you teach (e.g., Organic Chemistry, UI Design, R Statistics) with skills you want to learn this semester.
+        </p>
+<div class="flex items-center gap-space-xs pt-1">
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">north_east</span>
+            Offer 1 Skill
+          </span>
+<span class="material-symbols-outlined text-outline-variant text-[16px]">swap_horiz</span>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">south_west</span>
+            Request 1 Skill
+          </span>
+</div>
+</div>
+<button class="w-full py-space-sm rounded-lg bg-primary text-on-primary font-label-lg text-label-lg shadow-sm hover:opacity-95 active:scale-[0.99] transition-all flex items-center justify-center gap-space-xs" type="button">
+<span>Continue to Profile Setup</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Registration Form Surface -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md" id="form-container">
+<form class="flex flex-col gap-space-md" id="signup-form" onsubmit="event.preventDefault();">
+<!-- Full Name Field -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface" for="input-fullname">
+            Full Name
+          </label>
+<div class="relative w-full">
+<input class="w-full h-12 px-space-sm rounded-lg bg-surface text-on-surface font-body-md text-body-md placeholder-outline transition-colors focus:outline-none focus:bg-surface-container-low shadow-sm" id="input-fullname" name="fullname" placeholder="Maya Lin" type="text" value=""/>
+</div>
+<!-- Validation Feedback Box -->
+<p class="hidden font-caption text-caption text-error flex items-center gap-1 pt-0.5" id="error-fullname">
+<span class="material-symbols-outlined text-[16px]">error</span>
+            Full name is required to verify identity with peers.
+          </p>
+</div>
+<!-- University Email Field with Demo Error State -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface" for="input-email">
+              University Email
+            </label>
+<span class="font-caption text-caption text-on-surface-variant">.edu domain only</span>
+</div>
+<div class="relative w-full flex items-center">
+<input class="w-full h-12 pl-space-sm pr-10 rounded-lg bg-surface text-on-surface font-body-md text-body-md placeholder-outline transition-colors focus:outline-none focus:bg-surface-container-low shadow-sm" id="input-email" name="email" placeholder="maya@university.edu" type="email" value=""/>
+<span class="absolute right-3 text-outline material-symbols-outlined text-[20px] pointer-events-none" id="email-icon">
+              school
+            </span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant flex items-center gap-1" id="helper-email">
+<span class="material-symbols-outlined text-[14px]">info</span>
+            Must be a valid .edu address to unlock verified student badge.
+          </p>
+<p class="hidden font-caption text-caption text-error flex items-center gap-1 bg-error-container/40 p-2 rounded-lg" id="error-email">
+<span class="material-symbols-outlined text-[18px] text-error shrink-0">error</span>
+<span>Please enter a valid academic email address (e.g. name@college.edu)</span>
+</p>
+</div>
+<!-- Password Field with Rule Indicators -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface" for="input-password">
+            Password
+          </label>
+<div class="relative w-full flex items-center">
+<input class="w-full h-12 pl-space-sm pr-11 rounded-lg bg-surface text-on-surface font-body-md text-body-md placeholder-outline transition-colors focus:outline-none focus:bg-surface-container-low shadow-sm" id="input-password" name="password" placeholder="Create a secure password" type="password"/>
+<button aria-label="Toggle password visibility" class="absolute right-2 p-1.5 text-on-surface-variant hover:text-on-surface rounded-lg transition-colors flex items-center justify-center" id="btn-toggle-password" type="button">
+<span class="material-symbols-outlined text-[20px]" id="icon-toggle-password">visibility_off</span>
+</button>
+</div>
+<!-- Password Requirements Micro-Status Grid -->
+<div class="grid grid-cols-2 gap-space-xs pt-1">
+<div class="flex items-center gap-1.5 font-caption text-caption text-on-surface-variant" id="rule-length">
+<span class="material-symbols-outlined text-[16px] text-outline" id="rule-length-icon">radio_button_unchecked</span>
+<span>Min. 8 characters</span>
+</div>
+<div class="flex items-center gap-1.5 font-caption text-caption text-on-surface-variant" id="rule-number">
+<span class="material-symbols-outlined text-[16px] text-outline" id="rule-number-icon">radio_button_unchecked</span>
+<span>At least 1 number</span>
+</div>
+</div>
+</div>
+<!-- Confirm Password Field -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface" for="input-confirm-password">
+            Confirm Password
+          </label>
+<div class="relative w-full flex items-center">
+<input class="w-full h-12 pl-space-sm pr-11 rounded-lg bg-surface text-on-surface font-body-md text-body-md placeholder-outline transition-colors focus:outline-none focus:bg-surface-container-low shadow-sm" id="input-confirm-password" name="confirmPassword" placeholder="Re-enter your password" type="password"/>
+<button aria-label="Toggle confirm password visibility" class="absolute right-2 p-1.5 text-on-surface-variant hover:text-on-surface rounded-lg transition-colors flex items-center justify-center" id="btn-toggle-confirm" type="button">
+<span class="material-symbols-outlined text-[20px]" id="icon-toggle-confirm">visibility_off</span>
+</button>
+</div>
+<!-- Mismatch feedback box -->
+<p class="hidden font-caption text-caption text-error flex items-center gap-1 bg-error-container/40 p-2 rounded-lg" id="error-mismatch">
+<span class="material-symbols-outlined text-[18px] text-error shrink-0">cancel</span>
+<span>Passwords do not match. Please verify both entries.</span>
+</p>
+</div>
+<!-- Academic Honor Code & Terms Agreement -->
+<div class="flex items-start gap-space-sm pt-space-xs">
+<label class="relative flex items-center pt-0.5 cursor-pointer">
+<input class="sr-only peer" id="terms-checkbox" type="checkbox"/>
+<div class="w-5 h-5 rounded bg-surface peer-checked:bg-primary shadow-sm flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-on-primary text-[16px] opacity-0 peer-checked:opacity-100 transition-opacity">check</span>
+</div>
+</label>
+<div class="flex flex-col">
+<label class="font-body-sm text-body-sm text-on-surface leading-tight cursor-pointer" for="terms-checkbox">
+              I agree to the <span class="text-primary font-medium hover:underline">Terms of Service</span> and <span class="text-primary font-medium hover:underline">Academic Honor Code</span>
+</label>
+<span class="font-caption text-caption text-on-surface-variant pt-0.5">Reciprocal 1-for-1 learning without monetary exchange</span>
+</div>
+</div>
+<p class="hidden font-caption text-caption text-error flex items-center gap-1" id="error-terms">
+<span class="material-symbols-outlined text-[16px]">info</span>
+          You must agree to the Honor Code to join the student network.
+        </p>
+<!-- Primary CTA: Solid Deep Indigo -->
+<button class="w-full h-12 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg shadow-sm hover:opacity-90 active:scale-[0.99] transition-all flex items-center justify-center gap-space-xs mt-space-xs" id="btn-submit" type="button">
+<span>Create Account</span>
+<span class="material-symbols-outlined text-[18px]">how_to_reg</span>
+</button>
+</form>
+<!-- Alternate Sign In Navigation -->
+<div class="pt-space-xs text-center">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Already have an account? 
+          <a class="font-label-md text-label-md text-primary font-semibold hover:underline inline-flex items-center ml-1" href="#">
+            Log In
+          </a>
+</p>
+</div>
+</div>
+<!-- Peer Safety & Reciprocity Guarantee Note -->
+<div class="bg-surface-container-low rounded-xl p-space-sm flex items-center gap-space-sm shadow-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">shield</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Campus-Only Network</span>
+<span class="font-caption text-caption text-on-surface-variant">Profiles are strictly peer-reviewed and tied to university credentials.</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // DOM Elements
+  const btnToggleErrors = document.getElementById('btn-toggle-errors');
+  const btnToggleSuccess = document.getElementById('btn-toggle-success');
+  const formContainer = document.getElementById('form-container');
+  const progressionCard = document.getElementById('onboarding-progression-card');
+  const progressBarFill = document.getElementById('progress-bar-fill');
+
+  const inputFullName = document.getElementById('input-fullname');
+  const errorFullName = document.getElementById('error-fullname');
+
+  const inputEmail = document.getElementById('input-email');
+  const errorEmail = document.getElementById('error-email');
+  const helperEmail = document.getElementById('helper-email');
+
+  const inputPassword = document.getElementById('input-password');
+  const btnTogglePassword = document.getElementById('btn-toggle-password');
+  const iconTogglePassword = document.getElementById('icon-toggle-password');
+
+  const inputConfirmPassword = document.getElementById('input-confirm-password');
+  const btnToggleConfirm = document.getElementById('btn-toggle-confirm');
+  const iconToggleConfirm = document.getElementById('icon-toggle-confirm');
+  const errorMismatch = document.getElementById('error-mismatch');
+
+  const ruleLength = document.getElementById('rule-length');
+  const ruleLengthIcon = document.getElementById('rule-length-icon');
+  const ruleNumber = document.getElementById('rule-number');
+  const ruleNumberIcon = document.getElementById('rule-number-icon');
+
+  const termsCheckbox = document.getElementById('terms-checkbox');
+  const errorTerms = document.getElementById('error-terms');
+  const btnSubmit = document.getElementById('btn-submit');
+
+  let errorStateSimulated = false;
+
+  // Password Visibility Toggles
+  btnTogglePassword.addEventListener('click', () => {
+    const isText = inputPassword.type === 'text';
+    inputPassword.type = isText ? 'password' : 'text';
+    iconTogglePassword.textContent = isText ? 'visibility_off' : 'visibility';
+  });
+
+  btnToggleConfirm.addEventListener('click', () => {
+    const isText = inputConfirmPassword.type === 'text';
+    inputConfirmPassword.type = isText ? 'password' : 'text';
+    iconToggleConfirm.textContent = isText ? 'visibility_off' : 'visibility';
+  });
+
+  // Password Requirements Feedback
+  inputPassword.addEventListener('input', () => {
+    const val = inputPassword.value;
+    const hasLength = val.length >= 8;
+    const hasNum = /\d/.test(val);
+
+    // Length Rule
+    if (hasLength) {
+      ruleLengthIcon.textContent = 'check_circle';
+      ruleLengthIcon.classList.remove('text-outline');
+      ruleLengthIcon.classList.add('text-primary');
+      ruleLength.classList.add('text-primary');
+    } else {
+      ruleLengthIcon.textContent = 'radio_button_unchecked';
+      ruleLengthIcon.classList.add('text-outline');
+      ruleLengthIcon.classList.remove('text-primary');
+      ruleLength.classList.remove('text-primary');
+    }
+
+    // Number Rule
+    if (hasNum) {
+      ruleNumberIcon.textContent = 'check_circle';
+      ruleNumberIcon.classList.remove('text-outline');
+      ruleNumberIcon.classList.add('text-primary');
+      ruleNumber.classList.add('text-primary');
+    } else {
+      ruleNumberIcon.textContent = 'radio_button_unchecked';
+      ruleNumberIcon.classList.add('text-outline');
+      ruleNumberIcon.classList.remove('text-primary');
+      ruleNumber.classList.remove('text-primary');
+    }
+  });
+
+  // Simulate Specific Requirement States for Designer Review
+  function applyErrorStates() {
+    errorStateSimulated = true;
+    // 1. Untouched required input alert
+    inputFullName.value = '';
+    inputFullName.classList.add('bg-error-container/20');
+    errorFullName.classList.remove('hidden');
+
+    // 2. Invalid academic email state
+    inputEmail.value = 'maya.lin@gmail.com';
+    inputEmail.classList.add('bg-error-container/20');
+    helperEmail.classList.add('hidden');
+    errorEmail.classList.remove('hidden');
+
+    // 3. Password mismatch demonstration
+    inputPassword.value = 'CampusExchange2025';
+    inputConfirmPassword.value = 'CampusExchange2024';
+    inputConfirmPassword.classList.add('bg-error-container/20');
+    errorMismatch.classList.remove('hidden');
+
+    // 4. Terms unchecked
+    termsCheckbox.checked = false;
+    errorTerms.classList.remove('hidden');
+
+    btnToggleErrors.textContent = "Reset Form";
+  }
+
+  function clearErrorStates() {
+    errorStateSimulated = false;
+    inputFullName.classList.remove('bg-error-container/20');
+    errorFullName.classList.add('hidden');
+
+    inputEmail.classList.remove('bg-error-container/20');
+    helperEmail.classList.remove('hidden');
+    errorEmail.classList.add('hidden');
+
+    inputConfirmPassword.classList.remove('bg-error-container/20');
+    errorMismatch.classList.add('hidden');
+
+    errorTerms.classList.add('hidden');
+
+    btnToggleErrors.textContent = "Simulate Errors";
+  }
+
+  btnToggleErrors.addEventListener('click', () => {
+    if (errorStateSimulated) {
+      clearErrorStates();
+    } else {
+      applyErrorStates();
+    }
+  });
+
+  // Progression Card Toggle / Submission
+  function showNextStep() {
+    clearErrorStates();
+    inputFullName.value = 'Maya Lin';
+    inputEmail.value = 'maya.lin@columbia.edu';
+    inputPassword.value = 'CampusExchange2025';
+    inputConfirmPassword.value = 'CampusExchange2025';
+    termsCheckbox.checked = true;
+
+    progressionCard.classList.remove('hidden');
+    progressBarFill.classList.remove('w-1/3');
+    progressBarFill.classList.add('w-2/3');
+    progressionCard.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  btnToggleSuccess.addEventListener('click', () => {
+    if (progressionCard.classList.contains('hidden')) {
+      showNextStep();
+    } else {
+      progressionCard.classList.add('hidden');
+      progressBarFill.classList.remove('w-2/3');
+      progressBarFill.classList.add('w-1/3');
+    }
+  });
+
+  btnSubmit.addEventListener('click', () => {
+    // Basic verification check
+    const emailVal = inputEmail.value.trim().toLowerCase();
+    const isEdu = emailVal.endsWith('.edu');
+    const pwd = inputPassword.value;
+    const confirmPwd = inputConfirmPassword.value;
+    const nameVal = inputFullName.value.trim();
+
+    if (!nameVal || !isEdu || pwd !== confirmPwd || !termsCheckbox.checked) {
+      applyErrorStates();
+    } else {
+      showNextStep();
+    }
+  });
+</script></main></body></html>

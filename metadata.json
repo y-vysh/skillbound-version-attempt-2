@@ -1,0 +1,6 @@
+{
+  "name": "SkillBound",
+  "description": "Peer-to-peer skill exchange platform where students teach skills they know and learn skills they want to acquire.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

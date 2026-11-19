@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary": "#ffffff", "outline-variant": "#c7c4d7", "tertiary-fixed": "#ffddb8", "on-tertiary-fixed": "#2a1700", "secondary-fixed": "#e0e0ff", "on-primary-fixed-variant": "#372abf", "surface-variant": "#d3e4fe", "secondary-fixed-dim": "#bdc2ff", "on-tertiary-fixed-variant": "#653e00", "background": "#f8f9ff", "on-error-container": "#93000a", "surface-bright": "#f8f9ff", "surface-container": "#e5eeff", "error": "#ba1a1a", "on-surface": "#0b1c30", "surface-container-lowest": "#ffffff", "on-primary-fixed": "#100069", "inverse-surface": "#213145", "primary-fixed": "#e3dfff", "inverse-primary": "#c3c0ff", "primary": "#2a14b4", "on-secondary-container": "#17228f", "secondary-container": "#8792fe", "tertiary": "#553300", "surface": "#f8f9ff", "on-primary-container": "#c1beff", "on-error": "#ffffff", "primary-container": "#4338ca", "error-container": "#ffdad6", "surface-dim": "#cbdbf5", "tertiary-fixed-dim": "#ffb95f", "primary-fixed-dim": "#c3c0ff", "on-tertiary": "#ffffff", "on-primary": "#ffffff", "on-secondary-fixed-variant": "#2f3aa3", "on-secondary-fixed": "#000767", "surface-container-high": "#dce9ff", "inverse-on-surface": "#eaf1ff", "outline": "#777586", "on-background": "#0b1c30", "secondary": "#4953bc", "tertiary-container": "#744800", "surface-container-low": "#eff4ff", "on-tertiary-container": "#ffb759", "surface-tint": "#5148d7", "on-surface-variant": "#464554", "surface-container-highest": "#d3e4fe" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-md": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter": "1.5rem", "space-sm": "0.5rem", "margin-sm": "1rem", "space-xl": "2rem", "margin": "2rem", "gutter-sm": "1rem" }, fontFamily: { "caption": ["Inter"], "body-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "body-sm": ["Inter"], "display": ["Plus Jakarta Sans"], "label-md": ["Inter"], "label-sm": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "display-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-lg": ["Inter"] }, fontSize: { "caption": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "display": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["14px", { "lineHeight": "18px", "fontWeight": "500" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "label-lg": ["15px", { "lineHeight": "20px", "fontWeight": "600" }] } } } }</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f8f9ff;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter-sm flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="SkillBound Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPNQ-yw-42RN10LjCHaRZFfOR4B2VghB9IBqgT2aLIuMzdnqTngzpkNT4gILbRUr7dM1eOumNOsgugGC7Z8erUCbNWhDgcdPmaHjxhxQAaZWBS8MXo5NS_0BXjoApPJ2In0NOvGfXBtIjW_SrePSmx5y2ucEB5rNeuo3_jXStg4Mc0gJeolOSVbgBdx08cqFw7-J2jgLZwaF1c4iRS425CV6Zt1XUD7VvGKlPk09frrBZeao4VfP4l"/><div class="flex items-center gap-space-xs min-w-0"><span class="font-headline-md text-headline-md text-primary-container tracking-tight truncate">SkillBound</span><div class="flex items-center gap-0.5 px-1.5 py-0.5 rounded-full bg-secondary-fixed text-primary font-label-sm text-[11px] leading-tight flex-shrink-0" title="University Verified Student"><span class="material-symbols-outlined text-[13px] text-primary">verified</span><span class="font-medium">Edu</span></div></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container relative transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-tertiary-container ring-2 ring-surface"></span></button><a aria-label="Student Profile" class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center border border-outline-variant/40 text-primary-container font-label-md text-label-md font-semibold overflow-hidden" data-path="profile" href="#"><span class="material-symbols-outlined text-primary text-[22px]">school</span></a></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-[calc(100vh-5rem)]"><div class="flex flex-col w-full">
+<div class="px-gutter-sm space-y-space-lg pb-10">
+<!-- Student Hero Greeting & Reciprocity Status -->
+<section class="space-y-space-md">
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm relative overflow-hidden">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="space-y-1">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">school</span>
+<span>Columbia University • Spring 2025</span>
+</div>
+<h1 class="font-display-mobile text-display-mobile text-on-surface tracking-tight">
+              Welcome back, Maya!
+            </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Your peer exchange ledger is active and balanced.
+            </p>
+</div>
+<div class="w-12 h-12 rounded-full overflow-hidden bg-primary-fixed flex-shrink-0 flex items-center justify-center shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Warm collegiate portrait of Maya, an energetic university student in an academic library setting, wearing modern blue sweater, natural soft ambient light with university bookshelves in background, authentic collegiate realism" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn2FUlb6WSU0g5Y7b0yPYfZ8y2f1VcyBW9JGLrEjPRVHjPFHnN7KJUspWCpbk3weIgeAYTnOt2VYP8RruxN0z6NNRyCXxWBFukwSsL6yDULNsslFo86AmIpKVTzwuA2YXkZv1zxmxA_22fS0sPNtGkaa6v6pL2wBAA3mM6WYddHjs305wcUxClynLCMzbfeiHAUTkiuP8OhLZ4GGyYIETbmdzkk5bfa_-865rMhHSJErX-YueKeFad"/>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs bg-surface-container-lowest p-space-sm rounded-lg shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[20px]" style="font-variation-settings: 'FILL' 1;">balance</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Reciprocal Ratio: 1 : 1</span>
+<span class="font-caption text-caption text-on-surface-variant">Active Peer Equity Tier</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-primary-container font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+            Peer Verified
+          </span>
+</div>
+</div>
+<!-- Quick Action Floating Dock -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 -mx-gutter-sm px-gutter-sm">
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-sm active:scale-95 transition-all flex-shrink-0" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Add Skill</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container text-primary font-label-md text-label-md shadow-sm active:scale-95 transition-all flex-shrink-0" type="button">
+<span class="material-symbols-outlined text-[18px]">travel_explore</span>
+<span>Discover Peers</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md shadow-sm active:scale-95 transition-all flex-shrink-0" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary">swap_calls</span>
+<span>Requests (2)</span>
+</button>
+</div>
+</section>
+<!-- Overview 2x2 Metric Grid -->
+<section class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Academic Swap Overview</h2>
+<span class="font-caption text-caption text-on-surface-variant">Real-time reciprocity</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Card 1: Skills I Teach -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col justify-between space-y-3">
+<div class="flex items-center justify-between">
+<div class="w-8 h-8 rounded-lg bg-secondary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">record_voice_over</span>
+</div>
+<span class="font-headline-md text-headline-md text-primary font-bold">3</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Skills I Teach</span>
+<div class="flex flex-wrap gap-1 mt-1.5">
+<span class="font-caption text-[11px] px-1.5 py-0.5 rounded bg-surface-container-high text-primary-container">UI/UX</span>
+<span class="font-caption text-[11px] px-1.5 py-0.5 rounded bg-surface-container-high text-primary-container">Figma</span>
+<span class="font-caption text-[11px] px-1.5 py-0.5 rounded bg-surface-container-high text-primary-container">+1</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Skills I Want to Learn -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col justify-between space-y-3">
+<div class="flex items-center justify-between">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">2</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Skills I Seek</span>
+<div class="flex flex-wrap gap-1 mt-1.5">
+<span class="font-caption text-[11px] px-1.5 py-0.5 rounded bg-surface-container-low text-on-surface-variant">Python</span>
+<span class="font-caption text-[11px] px-1.5 py-0.5 rounded bg-surface-container-low text-on-surface-variant">Data Struct</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Pending Requests -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col justify-between space-y-3">
+<div class="flex items-center justify-between">
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">hourglass_top</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
+<span class="font-headline-md text-headline-md text-tertiary font-bold">2</span>
+</div>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Pending Swaps</span>
+<span class="font-caption text-caption text-on-surface-variant block mt-0.5">2 peers awaiting reply</span>
+</div>
+</div>
+<!-- Card 4: Upcoming Sessions -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col justify-between space-y-3">
+<div class="flex items-center justify-between">
+<div class="w-8 h-8 rounded-lg bg-secondary-fixed-dim/30 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">event</span>
+</div>
+<span class="font-headline-md text-headline-md text-secondary font-bold">1</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-semibold block">This Week</span>
+<span class="font-caption text-caption text-on-surface-variant block mt-0.5">Tomorrow afternoon</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Next Scheduled Session (Featured Card) -->
+<section class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Next Scheduled Session</h2>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+          Confirmed
+        </span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-space-md space-y-space-md">
+<!-- Partner Identification -->
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-primary-fixed flex items-center justify-center flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of Marcus Vance, a focused university junior student in computer science, warm library interior, wearing glasses, thoughtful smile, collegiate atmosphere with ambient desk lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2FziIevTIMnW20PemsMV8lJ2DW1LHddRDvXm42v9t2_mVHA8BirjC6mOMUh7e_wdY5H2WQdjA4oGgVa81jlZoTL1LpfWXcPY5CbfGHahOefv5W25vzVibGfNyFhjHYb7YIh-uehVbqRjyfhTx84bjFhVMSv7ASG2a2zL39w3daz_kTQELB_B9SgnizKgVaCR6NrSHo11E7h0B_cIfq-tu6rf6DzYCawEn1KJFtp3MlMiJPy2nqo9_"/>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface truncate font-semibold">Marcus Vance</span>
+<span class="font-caption text-caption text-on-surface-variant">CS, Junior</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant truncate">Mutual peer rating: 5.0 ★ (6 swaps)</p>
+</div>
+</div>
+<!-- Exchange Lockup Component -->
+<div class="bg-surface-container-low p-space-sm rounded-lg space-y-2">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-secondary-fixed text-primary flex items-center justify-center text-[12px] font-bold">↗</span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium truncate">You teach: Figma Auto-layout &amp; Systems</span>
+</div>
+<div class="flex items-center justify-center my-0.5">
+<span class="material-symbols-outlined text-[16px] text-outline">sync_alt</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center text-[12px] font-bold">↙</span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium truncate">Marcus teaches: Python Scripting Fundamentals</span>
+</div>
+</div>
+<!-- Session Logistics -->
+<div class="space-y-1.5 pt-1">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+<span>Tomorrow, Oct 24 • 3:30 PM - 4:30 PM</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">meeting_room</span>
+<span class="truncate">Butler Library, Room 302 (Campus Study)</span>
+</div>
+</div>
+<!-- Action CTAs -->
+<div class="grid grid-cols-2 gap-space-sm pt-2">
+<button class="w-full py-2.5 px-3 rounded-lg bg-surface-container text-primary font-label-md text-label-md text-center shadow-sm active:bg-surface-container-high transition-colors" type="button">
+            Prepare Notes
+          </button>
+<button class="w-full py-2.5 px-3 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md text-center shadow-sm active:bg-primary transition-colors" type="button">
+            View Details
+          </button>
+</div>
+</div>
+</section>
+<!-- Recommended Reciprocal Matches -->
+<section class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="space-y-0.5">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Complementary Peer Matches</h2>
+<p class="font-caption text-caption text-on-surface-variant">Rule-matched on complementary skill sets</p>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">3 Active</span>
+</div>
+<div class="space-y-space-md">
+<!-- Peer 1: Alex Chen -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-full overflow-hidden bg-primary-fixed flex items-center justify-center flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Authentic collegiate profile portrait of Alex Chen, senior undergraduate student with cheerful and approachable expression, natural indoor library backdrop, soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRdtiARSKnMD2xKrghTn3g_Ts79XASaHo2luey5byrDSLVeTEcWsYbtQeqoCtipBToHqUxM51SP4EDPiTGAhQUUPeFxUPYcNxpPOiZXM__jkXlfQ2QE2-WL-k3R4TnWjClMKFWw4gvqshIqyD14bzSxJFs08Lq-biYVvdoGOR_rKIpAM5Z9YkmSH7hAilyliByNcUuTJsCDkkZNytnWwEfRY39ntTHP5XhDQtbZUxADVvLK3zXgoPn"/>
+</div>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold block leading-tight">Alex Chen</span>
+<span class="font-caption text-caption text-on-surface-variant">Computer Science, Sr • Columbia</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[11px] font-semibold flex-shrink-0">
+<span class="material-symbols-outlined text-[13px] text-tertiary-container">stars</span>
+              Mutual Swap Match
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            "Passionate about full-stack dev. Looking to sharpen product design skills for my upcoming senior capstone project."
+          </p>
+<!-- Skills Offered vs Wanted -->
+<div class="space-y-1.5 pt-1">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-caption text-[11px] text-on-surface-variant font-medium">Teaches:</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-primary font-label-sm text-label-sm">Python</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-primary font-label-sm text-label-sm">Algorithms</span>
+</div>
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-caption text-[11px] text-on-surface-variant font-medium">Seeking:</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">UI Design</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Figma</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-space-sm pt-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-surface-container text-primary font-label-md text-label-md text-center transition-colors" type="button">
+              View Profile
+            </button>
+<button class="flex-1 py-2 px-3 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md text-center shadow-sm transition-colors flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">swap_horiz</span>
+<span>Request Swap</span>
+</button>
+</div>
+</div>
+<!-- Peer 2: Sofia Rodriguez -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-full overflow-hidden bg-secondary-fixed flex items-center justify-center flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of Sofia Rodriguez, an enthusiastic Data Science junior student wearing warm academic casual attire, smiling warmly in a university student commons with study tables" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCekmdAGYt6KZ3MND524zBUUBe4KA9LU6uEKiMO_FvOaQz_M9VO7hTFZ6PW_QZo8g_tIXYxjeYar-7Yg0IzuJsmSR-k_-j-hRNembAcU7aOvFdvm-JESqxgl3g5ZFLtTM-AS-_d2VJCDA1mqz4ogx-yN7kNz4XcSEBdGxfiCQIYaeXtjovNmYZ5Agjjx7ozf1DjAkMmk-vhbhSB9e7Eo2SQsEF7qsSbJT4SBXHeIwSFUz-Cbuk6AKrS"/>
+</div>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold block leading-tight">Sofia Rodriguez</span>
+<span class="font-caption text-caption text-on-surface-variant">Data Science, Jr • Barnard</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[11px] font-semibold flex-shrink-0">
+<span class="material-symbols-outlined text-[13px] text-tertiary-container">stars</span>
+              Mutual Match
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            "Stats major working on visualization dashboards. Happy to teach SQL &amp; pandas in exchange for user research tips."
+          </p>
+<div class="space-y-1.5 pt-1">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-caption text-[11px] text-on-surface-variant font-medium">Teaches:</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-primary font-label-sm text-label-sm">SQL</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-primary font-label-sm text-label-sm">Data Analysis</span>
+</div>
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-caption text-[11px] text-on-surface-variant font-medium">Seeking:</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Wireframing</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Usability Testing</span>
+</div>
+</div>
+<div class="pt-2">
+<button class="w-full py-2 px-3 rounded-lg bg-surface-container text-primary font-label-md text-label-md text-center transition-colors" type="button">
+              View Profile
+            </button>
+</div>
+</div>
+<!-- Peer 3: Liam Patel -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-full overflow-hidden bg-surface-container flex items-center justify-center flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Collegiate portrait of Liam Patel, a sophomore studying cognitive science, wearing casual glasses, standing near outdoor campus brick architecture with natural sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi44eTFjhz_8meEsbjD1h_ZyOGM9C8qNdXhCHrqBWqkr73CWCvl5jmeP3b3h3nnyvx12Clt_IgXMqDvsH9f10Wp1j2MoJ9U_vNpwdjXcmhjAJyQQAB8QKpMWw-_yVh2OY2p9fkppe2sh8NjtvPQRPSB36lA66zP3XthPDfM6CyZGd4_rTOyNoarsU8_7lxvG9bhtv3xNovE2UM_RfDIDJGazFdnM2ZcTCFKSUSWhJmeLogtfwX8K8y"/>
+</div>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold block leading-tight">Liam Patel</span>
+<span class="font-caption text-caption text-on-surface-variant">Cognitive Science, So • Columbia</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-[11px] font-semibold flex-shrink-0">
+<span class="material-symbols-outlined text-[13px] text-primary">handshake</span>
+              Compatible Match
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            "Focusing on human-computer interaction and web frontend basics. Excited to explore modular design systems."
+          </p>
+<div class="space-y-1.5 pt-1">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-caption text-[11px] text-on-surface-variant font-medium">Teaches:</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-primary font-label-sm text-label-sm">Calculus II</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-primary font-label-sm text-label-sm">React Basics</span>
+</div>
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-caption text-[11px] text-on-surface-variant font-medium">Seeking:</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Design Systems</span>
+</div>
+</div>
+<div class="pt-2">
+<button class="w-full py-2 px-3 rounded-lg bg-surface-container text-primary font-label-md text-label-md text-center transition-colors" type="button">
+              View Profile
+            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Campus Exchange Honor Code Footnote -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px] flex-shrink-0">verified_user</span>
+<p class="font-caption text-caption text-on-surface-variant leading-relaxed">
+        SkillBound is completely 1-for-1 and peer-governed. Time taught equals time earned. No monetary fees, tokens, or subscriptions.
+      </p>
+</div>
+</div>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary-container font-semibold"><div class="grid grid-cols-6 items-center h-20 px-1"><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-h-[44px] transition-colors text-primary-container font-semibold" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">space_dashboard</span><span class="font-label-sm text-[11px] leading-tight truncate max-w-full px-0.5">Dashboard</span></a><a class="flex flex-col items-center justify-center gap-1 min-h-[44px] text-on-surface-variant transition-colors" data-path="discover" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-sm text-[11px] leading-tight truncate max-w-full px-0.5">Discover</span></a><a class="flex flex-col items-center justify-center gap-1 min-h-[44px] text-on-surface-variant transition-colors" data-path="my-skills" href="#"><span class="material-symbols-outlined text-[22px]">psychology</span><span class="font-label-sm text-[11px] leading-tight truncate max-w-full px-0.5">My Skills</span></a><a class="flex flex-col items-center justify-center gap-1 min-h-[44px] text-on-surface-variant transition-colors" data-path="requests" href="#"><span class="material-symbols-outlined text-[22px]">swap_calls</span><span class="font-label-sm text-[11px] leading-tight truncate max-w-full px-0.5">Requests</span></a><a class="flex flex-col items-center justify-center gap-1 min-h-[44px] text-on-surface-variant transition-colors" data-path="sessions" href="#"><span class="material-symbols-outlined text-[22px]">event_available</span><span class="font-label-sm text-[11px] leading-tight truncate max-w-full px-0.5">Sessions</span></a><a class="flex flex-col items-center justify-center gap-1 min-h-[44px] text-on-surface-variant transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px]">account_circle</span><span class="font-label-sm text-[11px] leading-tight truncate max-w-full px-0.5">Profile</span></a></div></nav></body></html>

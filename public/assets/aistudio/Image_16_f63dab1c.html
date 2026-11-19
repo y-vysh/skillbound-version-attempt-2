@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary": "#ffffff", "outline-variant": "#c7c4d7", "tertiary-fixed": "#ffddb8", "on-tertiary-fixed": "#2a1700", "secondary-fixed": "#e0e0ff", "on-primary-fixed-variant": "#372abf", "surface-variant": "#d3e4fe", "secondary-fixed-dim": "#bdc2ff", "on-tertiary-fixed-variant": "#653e00", "background": "#f8f9ff", "on-error-container": "#93000a", "surface-bright": "#f8f9ff", "surface-container": "#e5eeff", "error": "#ba1a1a", "on-surface": "#0b1c30", "surface-container-lowest": "#ffffff", "on-primary-fixed": "#100069", "inverse-surface": "#213145", "primary-fixed": "#e3dfff", "inverse-primary": "#c3c0ff", "primary": "#2a14b4", "on-secondary-container": "#17228f", "secondary-container": "#8792fe", "tertiary": "#553300", "surface": "#f8f9ff", "on-primary-container": "#c1beff", "on-error": "#ffffff", "primary-container": "#4338ca", "error-container": "#ffdad6", "surface-dim": "#cbdbf5", "tertiary-fixed-dim": "#ffb95f", "primary-fixed-dim": "#c3c0ff", "on-tertiary": "#ffffff", "on-primary": "#ffffff", "on-secondary-fixed-variant": "#2f3aa3", "on-secondary-fixed": "#000767", "surface-container-high": "#dce9ff", "inverse-on-surface": "#eaf1ff", "outline": "#777586", "on-background": "#0b1c30", "secondary": "#4953bc", "tertiary-container": "#744800", "surface-container-low": "#eff4ff", "on-tertiary-container": "#ffb759", "surface-tint": "#5148d7", "on-surface-variant": "#464554", "surface-container-highest": "#d3e4fe" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-md": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter": "1.5rem", "space-sm": "0.5rem", "margin-sm": "1rem", "space-xl": "2rem", "margin": "2rem", "gutter-sm": "1rem" }, fontFamily: { "caption": ["Inter"], "body-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "body-sm": ["Inter"], "display": ["Plus Jakarta Sans"], "label-md": ["Inter"], "label-sm": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "display-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-lg": ["Inter"] }, fontSize: { "caption": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "display": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["14px", { "lineHeight": "18px", "fontWeight": "500" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "label-lg": ["15px", { "lineHeight": "20px", "fontWeight": "600" }] } } } }</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f8f9ff;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter-sm flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="SkillBound Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPNQ-yw-42RN10LjCHaRZFfOR4B2VghB9IBqgT2aLIuMzdnqTngzpkNT4gILbRUr7dM1eOumNOsgugGC7Z8erUCbNWhDgcdPmaHjxhxQAaZWBS8MXo5NS_0BXjoApPJ2In0NOvGfXBtIjW_SrePSmx5y2ucEB5rNeuo3_jXStg4Mc0gJeolOSVbgBdx08cqFw7-J2jgLZwaF1c4iRS425CV6Zt1XUD7VvGKlPk09frrBZeao4VfP4l"/><div class="flex items-center gap-space-xs min-w-0"><span class="font-headline-md text-headline-md text-primary-container tracking-tight truncate">SkillBound</span><div class="flex items-center gap-0.5 px-1.5 py-0.5 rounded-full bg-secondary-fixed text-primary font-label-sm text-[11px] leading-tight flex-shrink-0" title="University Verified Student"><span class="material-symbols-outlined text-[13px] text-primary">verified</span><span class="font-medium">Edu</span></div></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container relative transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-tertiary-container ring-2 ring-surface"></span></button><a aria-label="Student Profile" class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center border border-outline-variant/40 text-primary-container font-label-md text-label-md font-semibold overflow-hidden" data-path="profile" href="#"><span class="material-symbols-outlined text-primary text-[22px]">school</span></a></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-[calc(100vh-5rem)]"><div class="flex flex-col w-full px-gutter-sm space-y-space-lg">
+<!-- PAGE HEADER & RECIPROCAL BALANCE BANNER -->
+<div class="flex flex-col space-y-space-sm pt-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">My Skills</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Manage what you can teach and what you want to learn.</p>
+</div>
+<div class="h-10 w-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary-container shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">psychology</span>
+</div>
+</div>
+<!-- Reciprocity Status Card -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">balance</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Reciprocal Ratio</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-primary-container font-label-sm text-label-sm shadow-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> 1:1 Parity
+        </span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface">3 Teachable <span class="text-outline-variant font-normal">•</span> 2 Learning</p>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden flex">
+<div class="bg-primary-container h-full rounded-l-full" style="width: 60%"></div>
+<div class="bg-secondary-container h-full rounded-r-full" style="width: 40%"></div>
+</div>
+<div class="flex justify-between items-center pt-1 font-caption text-caption text-on-surface-variant">
+<span>Offering 3 active competencies</span>
+<span>Seeking 2 peer topics</span>
+</div>
+</div>
+</div>
+<!-- SECTION 1: SKILLS I CAN TEACH -->
+<section class="flex flex-col space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-2.5 h-2.5 rounded-full bg-primary-container"></div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Skills I Can Teach</h2>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm">3 Active</span>
+</div>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md shadow-sm active:scale-95 transition-transform" onclick="openSkillModal('teach')" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Add Skill</span>
+</button>
+</div>
+<!-- Teach Card A -->
+<article class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col space-y-space-sm">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2 mb-1 flex-wrap">
+<span class="px-2 py-0.5 rounded-md bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">Design</span>
+<span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">workspace_premium</span> Advanced (3 yrs)
+            </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Figma &amp; UI Systems</h3>
+</div>
+<div class="flex items-center gap-1 flex-shrink-0">
+<button aria-label="Edit Figma Skill" class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container" onclick="editSkillCard('Figma &amp; UI Systems', 'Design', 'Advanced', 'Component architecture, auto-layout, design tokens, and interactive prototyping.', 'teach')">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button aria-label="Remove Figma Skill" class="w-8 h-8 rounded-lg flex items-center justify-center text-error hover:bg-error-container" onclick="confirmRemove(this)">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Component architecture, auto-layout, design tokens, and interactive prototyping.</p>
+<div class="flex items-center gap-2 pt-1 flex-wrap">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">groups</span> 2 Peers Taught
+        </span>
+<span class="px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary" style="font-variation-settings: 'FILL' 1;">star</span> 5.0 Rating
+        </span>
+</div>
+</article>
+<!-- Teach Card B -->
+<article class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col space-y-space-sm">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2 mb-1 flex-wrap">
+<span class="px-2 py-0.5 rounded-md bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">Design</span>
+<span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">trending_up</span> Intermediate
+            </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">User Research &amp; Usability</h3>
+</div>
+<div class="flex items-center gap-1 flex-shrink-0">
+<button aria-label="Edit Usability Skill" class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container" onclick="editSkillCard('User Research &amp; Usability Testing', 'Design', 'Intermediate', 'Conducting user interviews, synthesizing affinity maps, and unmoderated test setup.', 'teach')">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button aria-label="Remove Usability Skill" class="w-8 h-8 rounded-lg flex items-center justify-center text-error hover:bg-error-container" onclick="confirmRemove(this)">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Conducting user interviews, synthesizing affinity maps, and unmoderated test setup.</p>
+<div class="flex items-center gap-2 pt-1 flex-wrap">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">groups</span> 1 Peer Taught
+        </span>
+</div>
+</article>
+<!-- Teach Card C -->
+<article class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col space-y-space-sm">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2 mb-1 flex-wrap">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">Programming</span>
+<span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">trending_up</span> Intermediate
+            </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Responsive Web Basics</h3>
+</div>
+<div class="flex items-center gap-1 flex-shrink-0">
+<button aria-label="Edit Web Skill" class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container" onclick="editSkillCard('Responsive Web Basics (HTML/CSS)', 'Programming', 'Intermediate', 'Semantic HTML5, CSS Grid/Flexbox, and accessible layout patterns.', 'teach')">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button aria-label="Remove Web Skill" class="w-8 h-8 rounded-lg flex items-center justify-center text-error hover:bg-error-container" onclick="confirmRemove(this)">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Semantic HTML5, CSS Grid/Flexbox, and accessible layout patterns.</p>
+<div class="flex items-center gap-2 pt-1 flex-wrap">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">swap_horiz</span> Ready to Swap
+        </span>
+</div>
+</article>
+</section>
+<!-- SECTION 2: SKILLS I WANT TO LEARN -->
+<section class="flex flex-col space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-2.5 h-2.5 rounded-full bg-secondary-container"></div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Skills I Want to Learn</h2>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-primary font-label-sm text-label-sm">2 Active</span>
+</div>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md shadow-sm active:scale-95 transition-transform" onclick="openSkillModal('learn')" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Add Skill</span>
+</button>
+</div>
+<!-- Learn Card 1 -->
+<article class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col space-y-space-sm">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2 mb-1 flex-wrap">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">Programming</span>
+<span class="font-caption text-caption text-secondary flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[15px]">flag</span> Beginner → Intermediate
+            </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Python Scripting &amp; Automation</h3>
+</div>
+<div class="flex items-center gap-1 flex-shrink-0">
+<button aria-label="Edit Python Skill" class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container" onclick="editSkillCard('Python Scripting &amp; Automation', 'Programming', 'Beginner', 'Want to automate data cleaning scripts and learn basic Pandas for coursework.', 'learn')">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button aria-label="Remove Python Skill" class="w-8 h-8 rounded-lg flex items-center justify-center text-error hover:bg-error-container" onclick="confirmRemove(this)">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Want to automate data cleaning scripts and learn basic Pandas for coursework.</p>
+<div class="pt-1">
+<div class="px-3 py-1.5 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-between">
+<span class="font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-tertiary">supervised_user_circle</span>
+<span>3 Compatible Peers on Campus</span>
+</span>
+<span class="material-symbols-outlined text-[18px] text-tertiary">chevron_right</span>
+</div>
+</div>
+</article>
+<!-- Learn Card 2 -->
+<article class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col space-y-space-sm">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2 mb-1 flex-wrap">
+<span class="px-2 py-0.5 rounded-md bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">Academics</span>
+<span class="font-caption text-caption text-secondary flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[15px]">flag</span> Beginner
+            </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Data Structures &amp; Algorithms</h3>
+</div>
+<div class="flex items-center gap-1 flex-shrink-0">
+<button aria-label="Edit DSA Skill" class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container" onclick="editSkillCard('Data Structures &amp; Algorithms', 'Academics', 'Beginner', 'Preparing for tech interviews; focusing on binary trees, recursion, and time complexity.', 'learn')">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button aria-label="Remove DSA Skill" class="w-8 h-8 rounded-lg flex items-center justify-center text-error hover:bg-error-container" onclick="confirmRemove(this)">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Preparing for tech interviews; focusing on binary trees, recursion, and time complexity.</p>
+<div class="pt-1">
+<div class="px-3 py-1.5 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-between">
+<span class="font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-tertiary">supervised_user_circle</span>
+<span>5 Compatible Peers on Campus</span>
+</span>
+<span class="material-symbols-outlined text-[18px] text-tertiary">chevron_right</span>
+</div>
+</div>
+</article>
+</section>
+<!-- EMPTY STATE PATTERN PREVIEW (COLLAPSIBLE SHOWCASE) -->
+<section class="flex flex-col space-y-space-sm pt-space-xs">
+<div class="flex items-center justify-between cursor-pointer" onclick="toggleEmptyStateDemo()">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">info</span>
+<span class="font-label-sm text-label-sm">Empty State Pattern Preview</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant transition-transform" id="demo-chevron">expand_more</span>
+</div>
+<div class="hidden p-space-lg rounded-xl bg-surface-container-low text-center flex flex-col items-center space-y-space-sm" id="demo-empty-state">
+<div class="w-14 h-14 rounded-full bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[28px]">handshake</span>
+</div>
+<div class="flex flex-col space-y-1 max-w-xs">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">No skills added yet</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sharing what you know unlocks reciprocal learning sessions across campus.</p>
+</div>
+<button class="mt-2 px-4 py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md shadow-sm" onclick="openSkillModal('teach')" type="button">
+        Add Your First Skill
+      </button>
+</div>
+</section>
+<!-- ADD / EDIT SKILL MODAL OVERLAY -->
+<div class="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4 bg-inverse-surface/40 backdrop-blur-sm hidden" id="skill-modal">
+<div class="w-full max-w-md bg-surface-container-lowest rounded-t-2xl sm:rounded-xl shadow-xl p-space-lg max-h-[795px] overflow-y-auto flex flex-col space-y-space-md">
+<!-- Modal Header -->
+<div class="flex items-start justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface" id="modal-title">Add Skill</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="modal-subtitle">Specify your skill details so peers can find and request exchanges.</p>
+</div>
+<button aria-label="Close dialog" class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container" onclick="closeSkillModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Mode Segmented Selector -->
+<div class="p-1 rounded-xl bg-surface-container flex">
+<button class="flex-1 py-1.5 text-center font-label-md text-label-md rounded-lg bg-surface-container-lowest text-primary-container shadow-sm transition-colors" id="mode-teach-btn" onclick="setSkillMode('teach')" type="button">
+          I Want to Teach
+        </button>
+<button class="flex-1 py-1.5 text-center font-label-md text-label-md rounded-lg text-on-surface-variant transition-colors" id="mode-learn-btn" onclick="setSkillMode('learn')" type="button">
+          I Want to Learn
+        </button>
+</div>
+<!-- Form Inputs -->
+<form class="flex flex-col space-y-space-md" id="skill-form" onsubmit="handleFormSubmit(event)">
+<!-- Skill Name -->
+<div class="flex flex-col space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface" for="skill-name">Skill Name</label>
+<input class="px-3 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm outline-none focus:ring-2 focus:ring-primary-container/30" id="skill-name" placeholder="e.g. Python for Data Analysis" required="" type="text"/>
+</div>
+<!-- Category Dropdown -->
+<div class="flex flex-col space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface" for="skill-category">Department / Category</label>
+<select class="px-3 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm outline-none focus:ring-2 focus:ring-primary-container/30" id="skill-category">
+<option value="Programming">Programming</option>
+<option value="Design">Design</option>
+<option value="Academics">Academics</option>
+<option value="AI/ML">AI / Machine Learning</option>
+<option value="Languages">Languages</option>
+<option value="Business">Business</option>
+<option value="Music">Music</option>
+<option value="Other">Other</option>
+</select>
+</div>
+<!-- Skill Level -->
+<div class="flex flex-col space-y-1.5">
+<label class="font-label-sm text-label-sm text-on-surface">Proficiency Level</label>
+<div class="grid grid-cols-2 gap-2">
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low cursor-pointer">
+<input checked="" class="text-primary-container focus:ring-primary-container" name="skill-level" type="radio" value="Beginner"/>
+<span class="font-label-sm text-label-sm text-on-surface">Beginner</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low cursor-pointer">
+<input class="text-primary-container focus:ring-primary-container" name="skill-level" type="radio" value="Intermediate"/>
+<span class="font-label-sm text-label-sm text-on-surface">Intermediate</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low cursor-pointer">
+<input class="text-primary-container focus:ring-primary-container" name="skill-level" type="radio" value="Advanced"/>
+<span class="font-label-sm text-label-sm text-on-surface">Advanced</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low cursor-pointer">
+<input class="text-primary-container focus:ring-primary-container" name="skill-level" type="radio" value="Proficient"/>
+<span class="font-label-sm text-label-sm text-on-surface">Proficient</span>
+</label>
+</div>
+</div>
+<!-- Description -->
+<div class="flex flex-col space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface" for="skill-desc">Description &amp; Focus Topics</label>
+<textarea class="px-3 py-2 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm outline-none focus:ring-2 focus:ring-primary-container/30 resize-none" id="skill-desc" placeholder="Briefly describe what you can teach or what topics you want to cover..." required="" rows="3"></textarea>
+</div>
+<!-- Actions -->
+<div class="flex items-center justify-end gap-2 pt-2">
+<button class="px-4 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container" onclick="closeSkillModal()" type="button">
+            Cancel
+          </button>
+<button class="px-5 py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md shadow-sm active:scale-95 transition-transform" type="submit">
+            Save Skill
+          </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<script>
+  let currentSkillMode = 'teach';
+
+  function openSkillModal(mode = 'teach') {
+    currentSkillMode = mode;
+    const modal = document.getElementById('skill-modal');
+    const title = document.getElementById('modal-title');
+    modal.classList.remove('hidden');
+    if (mode === 'teach') {
+      title.innerText = 'Add Teachable Skill';
+      setSkillMode('teach');
+    } else {
+      title.innerText = 'Add Learning Goal';
+      setSkillMode('learn');
+    }
+  }
+
+  function closeSkillModal() {
+    const modal = document.getElementById('skill-modal');
+    modal.classList.add('hidden');
+    document.getElementById('skill-form').reset();
+  }
+
+  function setSkillMode(mode) {
+    currentSkillMode = mode;
+    const teachBtn = document.getElementById('mode-teach-btn');
+    const learnBtn = document.getElementById('mode-learn-btn');
+    if (mode === 'teach') {
+      teachBtn.className = 'flex-1 py-1.5 text-center font-label-md text-label-md rounded-lg bg-surface-container-lowest text-primary-container shadow-sm transition-colors';
+      learnBtn.className = 'flex-1 py-1.5 text-center font-label-md text-label-md rounded-lg text-on-surface-variant transition-colors';
+    } else {
+      learnBtn.className = 'flex-1 py-1.5 text-center font-label-md text-label-md rounded-lg bg-surface-container-lowest text-primary-container shadow-sm transition-colors';
+      teachBtn.className = 'flex-1 py-1.5 text-center font-label-md text-label-md rounded-lg text-on-surface-variant transition-colors';
+    }
+  }
+
+  function editSkillCard(name, category, level, desc, mode) {
+    openSkillModal(mode);
+    document.getElementById('modal-title').innerText = 'Edit Skill';
+    document.getElementById('skill-name').value = name;
+    document.getElementById('skill-category').value = category;
+    document.getElementById('skill-desc').value = desc;
+    const radios = document.getElementsByName('skill-level');
+    for (let r of radios) {
+      if (r.value === level) r.checked = true;
+    }
+  }
+
+  function confirmRemove(btn) {
+    const card = btn.closest('article');
+    if (card) {
+      card.style.opacity = '0.4';
+      setTimeout(() => {
+        card.remove();
+      }, 200);
+    }
+  }
+
+  function toggleEmptyStateDemo() {
+    const box = document.getElementById('demo-empty-state');
+    const chev = document.getElementById('demo-chevron');
+    if (box.classList.contains('hidden')) {
+      box.classList.remove('hidden');
+      chev.classList.add('rotate-180');
+    } else {
+      box.classList.add('hidden');
+      chev.classList.remove('rotate-180');
+    }
+  }
+
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    closeSkillModal();
+  }
+
+  // Ensure bottom navigation shows 'My Skills' active
+  document.addEventListener('DOMContentLoaded', () => {
+    const navItems = document.querySelectorAll('nav a');
+    navItems.forEach(item => {
+      if (item.getAttribute('data-path') === 'my-skills') {
+        item.classList.remove('text-on-surface-variant');
+        item.classList.add('text-primary-container', 'font-semibold');
+      } else {
+        item.classList.remove('text-primary-container', 'font-semibold');
+        item.classList.add('text-on-surface-variant');
+      }
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary-container font-semibold"><div class="grid grid-cols-6 items-center h-20 px-1"><a class="flex flex-col items-center justify-center gap-1 min-h-[44px] text-on-surface-variant transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">space_dashboard</span><span class="font-label-sm text-[11px] leading-tight truncate max-w-full px-0.5">Dashboard</span></a><a class="flex flex-col items-center justify-center gap-1 min-h-[44px] text-on-surface-variant transition-colors" data-path="discover" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-sm text-[11px] leading-tight truncate max-w-full px-0.5">Discover</span></a><a class="flex flex-col items-center justify-center gap-1 min-h-[44px] text-on-surface-variant transition-colors" data-path="my-skills" href="#"><span class="material-symbols-outlined text-[22px]">psychology</span><span class="font-label-sm text-[11px] leading-tight truncate max-w-full px-0.5">My Skills</span></a><a class="flex flex-col items-center justify-center gap-1 min-h-[44px] text-on-surface-variant transition-colors" data-path="requests" href="#"><span class="material-symbols-outlined text-[22px]">swap_calls</span><span class="font-label-sm text-[11px] leading-tight truncate max-w-full px-0.5">Requests</span></a><a class="flex flex-col items-center justify-center gap-1 min-h-[44px] text-on-surface-variant transition-colors" data-path="sessions" href="#"><span class="material-symbols-outlined text-[22px]">event_available</span><span class="font-label-sm text-[11px] leading-tight truncate max-w-full px-0.5">Sessions</span></a><a class="flex flex-col items-center justify-center gap-1 min-h-[44px] text-on-surface-variant transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px]">account_circle</span><span class="font-label-sm text-[11px] leading-tight truncate max-w-full px-0.5">Profile</span></a></div></nav></body></html>
